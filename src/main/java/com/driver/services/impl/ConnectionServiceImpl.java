@@ -8,10 +8,8 @@ import com.driver.services.ConnectionService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import java.util.List;
-
 @Service
-public class ConnectionServiceImpl implements ConnectionService {
+public class ConnectionServiceImpl implements ConnectionService{
     @Autowired
     UserRepository userRepository2;
     @Autowired
@@ -21,14 +19,14 @@ public class ConnectionServiceImpl implements ConnectionService {
 
     @Override
     public User connect(int userId, String countryName) throws Exception{
-
+        return new User();
     }
     @Override
     public User disconnect(int userId) throws Exception {
-
+        return new User();
     }
     @Override
     public User communicate(int senderId, int receiverId) throws Exception {
-
+        return new User();
     }
 }
